@@ -10,7 +10,7 @@ const layoutStyle = {
 }
 const mainStyle = {
   padding: '0 20px 20px 20px',
-  'max-width': '84rem',
+  'max-width': '80rem',
   margin: '0 auto'
 }
 

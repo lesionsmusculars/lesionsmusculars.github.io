@@ -19,7 +19,7 @@ const Header = () => (
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
-      <meta name="theme-color" content="#64bc58" />
+      <meta name="theme-color" content="#00ad69" />
       <link rel="icon" href="/static/favicon.ico" />
       <link rel="manifest" href="/manifest.json" />
       <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -27,7 +27,7 @@ const Header = () => (
       <meta name="apple-mobile-web-app-title" content="Beneficios Familias Numerosas"/>
       <link rel="apple-touch-icon" href="/static/icons/android-chrome-192x192.png"/>
       <meta name="msapplication-TileImage" content="/static/icons/android-chrome-192x192.png"/>
-      <meta name="msapplication-TileColor" content="#64bc58"/>
+      <meta name="msapplication-TileColor" content="#00ad69"/>
       <link rel="stylesheet" href="/static/bootstrap.min.css" />
       <link rel="stylesheet" href="/static/foundation.min.css" />
       <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet" />
@@ -61,14 +61,6 @@ const Header = () => (
               padding:.5em;
               height:468px;
               width:768px;
-            }
-          }
-          @media screen and (min-width: 1024px) {
-          .bg-header {
-              background: url('/static/bg-congres-creu-blanca-lesions-musculars-1024.png');
-              padding:.5em;
-              height:623px;
-              width:1024px;
             }
           }
         `}</style>

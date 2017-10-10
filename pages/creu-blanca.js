@@ -17,7 +17,12 @@ export default () => (
           }
         `}</style>
       </nav>
-        <h1>¿Qué es Creu Blanca?</h1>
+      <h1>¿Qué es Creu Blanca?</h1>
+      <section>
+        <figure className='align-left'>
+          <img src='/static/seu-creu-blanca.jpg'/>
+          <figcaption><small>Sede de Creu Blanca</small></figcaption>
+        </figure>
         <p>Fundada en 1950, Creu Blanca es un grupo de empresas familiar (5 centros en Barcelona y 2 en Zaragoza) especializados en la prevención, el diagnóstico y el tratamiento de la salud, que cuenta con más de 250 profesionales de la medicina de todas las especialidades médicas.</p>
 
         <p>La Clínica Creu Blanca está equipada con la mejor tecnología y ofrece un servicio permanente de Urgencias, así como una Unidad Quirúrgica y habitaciones.</p>
@@ -31,5 +36,20 @@ export default () => (
         <p>Se dispone de 4 equipos de resonancia de 3 Teslas, 6 equipos convencionales de 1,5 teslas y 3 equipos no claustrofóbicos. También se cuenta con un TAC de 640 cortes, único a nivel español,  así como equipos de radiología digital y ecógrafos de última generación.</p>
 
         <p>Por nuestras instalaciones han pasado, y pasan, jugadores del FCB y el RCDE y deportistas del Consell Català de l’Esport.</p>
+        <style jsx>{`
+          @media screen and (max-width: 768px) {
+            .align-left img {
+              margin:0 auto;
+              display:block;
+            }  
+          }
+          @media screen and (min-width: 1024px) {
+            .align-left {
+              float:left;
+              padding-right:1em;
+            }
+          }
+        `}</style>
+      </section>
     </Layout>
 )
