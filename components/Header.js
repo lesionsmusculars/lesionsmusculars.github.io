@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import NProgress from 'nprogress'
 import Router from 'next/router'
-import NavBarBenFamNum from './NavBarBenFamNum'
 
 Router.onRouteChangeStart = (url) => {
   console.log(`Loading: ${url}`)
@@ -13,7 +12,7 @@ Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
 
 const Header = () => (
-  <div style={{ marginBottom: 20 }}>
+  <div>
     <Head>
       {/* Import CSS for nprogress */}
       <link rel='stylesheet' type='text/css' href='/static/nprogress.css' />
@@ -38,13 +37,12 @@ const Header = () => (
       <script async="true" defer="true" src="/static/intersection-observer.js"
         type="text/javascript"></script>
     </Head>
-    <header/>
-      <div className='bg-header' />
-    <header/>    
-    <NavBarBenFamNum />
+    <header><div className='bg-header'></div></header>
         <style jsx>{`
           header {
             background:#02272e;
+            height:100%;
+            widht:100%;
           }
           .bg-header {
             margin:0 auto;
@@ -66,10 +64,10 @@ const Header = () => (
             }
           }
           @media screen and (min-width: 1024px) {
-          bg-header {
+          .bg-header {
               background: url('/static/bg-congres-creu-blanca-lesions-musculars-1024.png');
               padding:.5em;
-              height:682px;
+              height:623px;
               width:1024px;
             }
           }

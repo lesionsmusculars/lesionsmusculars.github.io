@@ -1,18 +1,15 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import LayoutHome from '../components/LayoutHome.js'
+import Layout from '../components/MyLayout.js'
 
 
 export default () => (
-    <LayoutHome>
+    <Layout>
     <Head>
       <title>II Congreso Creu Blanca sobre Lesiones Musculares</title>
     </Head>
-        <section className='call-to-action'>
-                <h1><img src='/static/icona-conseguir-beneficios-familias-numerosas.png'/><br/>¿Eres socio? ¿Quieres conseguir estos descuentos?</h1>
-                <p>Ser familia numerosa te ofrece la posibilidad de muchas ventajas al asociarte. Participa y disfruta de todas ellas de una manera fácil y rápida.</p>
-                <p><img src='/static/carnet-familias-numerosas.jpg'/></p>
-                <p><Link href="http://www.familias-numerosas.org/"><a className='hollow button' target='_blank'>Quiero participar de estas ventajas</a></Link></p>
+        <section className='call-to-action'>                
+                <p>Per fer.</p>
                 <style jsx>{`
                     .call-to-action {
                         text-align:center;
@@ -51,5 +48,5 @@ export default () => (
                     }
                 `}</style>
             </section>
-    </LayoutHome>
+    </Layout>
 )

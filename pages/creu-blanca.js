@@ -11,6 +11,11 @@ export default () => (
             <span className="show-for-sr">Actual: </span>Creu Blanca
           </li>
         </ul>
+        <style jsx>{`
+          nav {
+            padding-top:1em;
+          }
+        `}</style>
       </nav>
         <h1>¿Qué es Creu Blanca?</h1>
         <p>Fundada en 1950, Creu Blanca es un grupo de empresas familiar (5 centros en Barcelona y 2 en Zaragoza) especializados en la prevención, el diagnóstico y el tratamiento de la salud, que cuenta con más de 250 profesionales de la medicina de todas las especialidades médicas.</p>

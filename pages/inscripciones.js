@@ -10,10 +10,15 @@ export default () => (
             <span className="show-for-sr">Actual: </span>Hazte socio
           </li>
         </ul>
+        <style jsx>{`
+          nav {
+            padding-top:1em;
+          }
+        `}</style>
       </nav>
 
       <section className='call-to-action'>
-        <h1>Hazte socio</h1>
+        <h1>Inscripciones</h1>
 
         <figure><img src='http://www.familiasnumerosas.org/fileadmin/user_upload/Destacados/Imagenhome2016familiasnumerosas.jpg' width='100%' height='324' alt='Imagen hazte socio Familias Numerosas' title='Imagen hazte socio Familias Numerosas'/></figure>
 
@@ -55,7 +60,7 @@ export default () => (
               text-align:left;
             }
             h1, h2 {
-                color:#391f92;
+              color:#00ad69;
             }
             @media screen and (min-width: 320px) {   
                 .call-to-action {

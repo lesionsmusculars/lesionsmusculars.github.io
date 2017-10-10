@@ -10,6 +10,11 @@ export default () => (
             <span className="show-for-sr">Actual: </span>Aviso Legal
           </li>
         </ul>
+        <style jsx>{`
+          nav {
+            padding-top:1em;
+          }
+        `}</style>
       </nav>
         <h1>Aviso Legal</h1>
         <p>Los derechos de propiedad intelectual de los servicios on-line de Cruz Blanca y de su contenido pertenecen a dicha sociedad o, en su caso, a terceras personas.</p>

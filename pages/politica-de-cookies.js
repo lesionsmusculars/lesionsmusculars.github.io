@@ -10,6 +10,11 @@ export default () => (
             <span className="show-for-sr">Actual: </span>Política de Cookies
           </li>
         </ul>
+        <style jsx>{`
+          nav {
+            padding-top:1em;
+          }
+        `}</style>
       </nav>
         <h1>Política de cookies</h1>
         <p>Las cookies son breves informaciones que se envían y almacenan en el disco duro del ordenador del usuario a través de su navegador cuando éste se conecta a una web. Las cookies se pueden utilizar para recabar y almacenar datos del usuario mientras está conectado para facilitarle los servicios solicitados y que no se suelen conservar (cookies de sesión), o para conservar los datos del usuario para otro tipo de servicios futuros y que se pueden conservar por tiempo indefinido (cookies persistentes). Las cookies pueden ser propias o de terceros.</p>

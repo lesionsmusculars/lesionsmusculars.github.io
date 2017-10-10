@@ -15,8 +15,8 @@ const Footer = () => (
         <p><Link href="@"><a target="_blank"><img src='/static/logo-facebook-familias-numerosas.png' /></a></Link> <Link href="#"><a target="_blank"><img src='/static/logo-twitter-familias-numerosas.png' /></a></Link></p>
 
         <section>
-          <p className='purple'><Link href="http://www.elfac.org/"><a target="_blank"><img src='/static/logo-european-large-families-confederation-familias-numerosas.jpg' /></a></Link> <Link href="https://www.msssi.gob.es/"><a target="_blank"><img src='/static/logo-ministerio-familias-numerosas.png' /></a></Link> <Link href="http://www.masfamilia.org/que-es-2"><a target="_blank"><img src='/static/logo-familiarmente-responsable-familias-numerosas.png' /></a></Link>
-          </p>
+          {/* <p className='purple'><Link href="http://www.elfac.org/"><a target="_blank"><img src='/static/logo-european-large-families-confederation-familias-numerosas.jpg' /></a></Link> <Link href="https://www.msssi.gob.es/"><a target="_blank"><img src='/static/logo-ministerio-familias-numerosas.png' /></a></Link> <Link href="http://www.masfamilia.org/que-es-2"><a target="_blank"><img src='/static/logo-familiarmente-responsable-familias-numerosas.png' /></a></Link>
+          </p> */}
           <p className='grey'>Creu Blanca &#169; 2017
           <Link prefetch href="/aviso-legal">
             <a style={linkStyle}>Aviso Legal</a>
