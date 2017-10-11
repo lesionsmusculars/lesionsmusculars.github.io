@@ -27,6 +27,9 @@ export default class NavBarBenFamNum extends React.Component {
           <span className='align-nav'>
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
+                <NavItem><Link prefetch href="/presentacion">
+                  <a>Presentación</a>
+                </Link></NavItem>
                 <NavItem><Link prefetch href="/inscripciones">
                   <a>Inscripciones</a>
                 </Link></NavItem>

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Observer from 'react-intersection-observer'
 import Layout from '../components/MyLayout.js'
 
 export default () => (
@@ -17,12 +18,16 @@ export default () => (
           }
         `}</style>
       </nav>
-      <h1>¿Qué es Creu Blanca?</h1>
       <section>
-        <figure className='align-left'>
-          <img src='/static/seu-creu-blanca.jpg'/>
-          <figcaption><small>Sede de Creu Blanca</small></figcaption>
-        </figure>
+        <Observer threshold={1} triggerOnce={true} render={() => (
+          <figure className='align-left fade-in'>
+            <img src='/static/seu-creu-blanca.jpg'/>
+            <figcaption><small>Sede de Creu Blanca</small></figcaption>
+          </figure>
+          )} />
+
+        <h1>¿Qué es Creu Blanca?</h1>
+        
         <p>Fundada en 1950, Creu Blanca es un grupo de empresas familiar (5 centros en Barcelona y 2 en Zaragoza) especializados en la prevención, el diagnóstico y el tratamiento de la salud, que cuenta con más de 250 profesionales de la medicina de todas las especialidades médicas.</p>
 
         <p>La Clínica Creu Blanca está equipada con la mejor tecnología y ofrece un servicio permanente de Urgencias, así como una Unidad Quirúrgica y habitaciones.</p>
@@ -47,6 +52,20 @@ export default () => (
             .align-left {
               float:left;
               padding-right:1em;
+            }
+          }
+          .fade-in {
+            animation-name: fadeIn;
+            animation-duration: 1.3s;
+            animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+            animation-fill-mode: forwards;
+          }
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
             }
           }
         `}</style>
