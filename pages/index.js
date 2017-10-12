@@ -56,6 +56,85 @@ export default () => (
                                     <em>Moderador Dr. Gil Rodas</em><br/>
                                     <small>Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona</small></td>
                                 </tr>
+                                <tr>
+                                    <td width='150'>10:15 - 10:45</td>
+                                    <td width='300'><strong className='bold green-creu-blanca'>Caso FC. Barcelona 1 (isquios)</strong><br/>
+                                    <em>Dr. Ricard Pruna </em><br/>
+                                    <small>Servicios médicos FC. Barcelona</small><br/>
+                                    <em>Dra. Sandra Mechó</em><br/>
+                                    <small>Servicios médicos FC. Barcelona y Radiología Asistencia Sanitaria Colegial</small><br/>
+                                    <em>Sr. Xavier Linde</em><br/>
+                                    <small>Servicios médicos FC. Barcelona</small><br/>
+                                    <em>Moderador Dr. Gil Rodas</em><br/>
+                                    <small>Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona</small></td>
+                                </tr>
+                                <tr className='bg-green-creu-blanca'>
+                                    <td width='150'>10:45 - 11:15</td>
+                                    <td width='300'><strong className='bold'>Coffee Break</strong></td>
+                                </tr>
+                                <tr>
+                                    <td width='150'>11:15 - 11:45</td>
+                                    <td width='300'><strong className='bold green-creu-blanca'>Caso Athletic Club de Bilbao</strong><br/>
+                                    <em>Dr. Iñigo Iriarte</em><br/>
+                                    <small>Médico rehabilitador ARS Médica Bilbao</small><br/>
+                                    <em>Dr. Joseán Lekue</em><br/>
+                                    <small>Servicios Médicos Athletic Club  de Bilbao</small><br/>
+                                    <em>Moderador Dr. Lluís Til</em><br/>
+                                    <small>Director médico Sport Lisboa e Benfica</small></td>
+                                </tr>
+                                <tr>
+                                    <td width='150'>11:45 - 12:15</td>
+                                    <td width='300'><strong className='bold green-creu-blanca'>Caso Consell Català de l'Esport</strong><br/>
+                                    <em>Dr. Ramón Balius</em><br/>
+                                    <small>Clínica Diagonal y Consell Català de l´Esport</small><br/>
+                                    <em>Moderador Dr. Lluís Til</em><br/>
+                                    <small>Director médico Sport Lisboa e Benfica</small></td>
+                                </tr>
+                                <tr>
+                                    <td width='150'>12:15 - 12:45</td>
+                                    <td width='300'><strong className='bold green-creu-blanca'>Caso Hospital Clínic</strong><br/>
+                                    <em>Dr. Gil Rodas</em><br/>
+                                    <small>Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona</small><br/>
+                                    <em>Moderador Dr. Lluís Til</em><br/>
+                                    <small>Director médico Sport Lisboa e Benfica</small></td>
+                                </tr>
+                                <tr>
+                                    <td width='150'>12:45 - 13:15</td>
+                                    <td width='300'><strong className='bold green-creu-blanca'>Caso FC. Barcelona 2 (sóleo)</strong><br/>
+                                    <em>Dr. Ricard Pruna </em><br/>
+                                    <small>Servicios médicos FC. Barcelona</small><br/>
+                                    <em>Dra. Sandra Mechó</em><br/>
+                                    <small>Servicios médicos FC. Barcelona y Radiología Asistencia Sanitaria Colegial</small><br/>
+                                    <em>Sr. Xavier Linde</em><br/>
+                                    <small>Servicios médicos FC. Barcelona</small><br/>
+                                    <em>Moderador Dr. Gil Rodas</em><br/>
+                                    <small>Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona</small></td>
+                                </tr>
+                                <tr>
+                                    <td width='150'>13:15 - 13:45</td>
+                                    <td width='300'><strong className='bold green-creu-blanca'>Caso Benfica 2</strong><br/>
+                                    <em>Dr. Lluís Til</em><br/>
+                                    <small>Director médico Sport Lisboa e Benfica</small><br/>
+                                    <em>Moderador Dr. Gil Rodas</em><br/>
+                                    <small>Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona</small></td>
+                                </tr>
+                                <tr>
+                                    <td width='150'>13:45 - 14:15</td>
+                                    <td width='300'><strong className='bold green-creu-blanca'>Gestión práctica del proceso del return to play</strong><br/>
+                                    <small>Visión desde un banquillo profesional</small><br/>
+                                    <em>Dr. Ricard Pruna </em><br/>
+                                    <small>Servicios médicos FC. Barcelona</small></td>
+                                </tr>
+                                <tr>
+                                    <td width='150'>14:15 - 14:30</td>
+                                    <td width='300'><strong className='bold green-creu-blanca'>Cierre de las Jornadas</strong><br/>
+                                    <em>Dra. Enriqueta Alomar</em><br/>
+                                    <small>Directora Médica del Grupo Creu Blanca</small></td>
+                                </tr>
+                                <tr className='bg-green-creu-blanca'>
+                                    <td width='150'>14:30</td>
+                                    <td width='300'><strong className='bold'>Cocktail</strong></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -70,6 +149,27 @@ export default () => (
                         <p><strong className='bold'>Especialistas del Consell Català de l'Esport</strong></p>
                         <ul className='no-style'>
                             <li>Dr. Ramon Balius</li>
+                        </ul>
+                        <p><strong className='bold'>Especialistas del FC. Barcelona</strong></p>
+                        <ul className='no-style'>
+                            <li>Médicos y rehabilitadores del primer equipo</li>
+                        </ul>
+                        <p><strong className='bold'>Especialistas del Athletic Club de Bilbao</strong></p>
+                        <ul className='no-style'>
+                            <li>Íñigo Iriarte</li>
+                        </ul>
+                        <p><strong className='bold'>Especialistas de la Unidad de Medicina del Deporte del Hospital Clínic de Barcelona</strong></p>
+                        <ul className='no-style'>
+                            <li>Dr. Gil Rodas</li>
+                        </ul>
+                        <p><strong className='bold'>Especialistas del Villareal Club de Fútbol</strong></p>
+                        <ul className='no-style'>
+                            <li>Médicos y rehabilitadores del primer equipo</li>
+                        </ul>
+                        <p className='green-creu-blanca uppercase'>Dirigido a</p>
+                        <ul className='no-style'>
+                            <li>Médicos del deporte, Traumatólogos, Fisioterapeutas y Rehabilitadores</li>
+                            <li>Preparadores físicos, Readaptadores e INEF</li>
                         </ul>
                     </div>
                 </section>
@@ -86,6 +186,10 @@ export default () => (
                     }
                     .green-creu-blanca {
                         color:#00ad69;
+                    }
+                    .bg-green-creu-blanca {
+                        color:#ffffff;
+                        background:#00ad69!important;
                     }
                     .align-center {
                         text-align:center;
@@ -107,7 +211,7 @@ export default () => (
                         display: flex;
                         -ms-flex-wrap: wrap;
                             flex-wrap: wrap;
-                        align-items:center;
+                        align-items:top;
 
                         width: 100%;
                     }
@@ -125,9 +229,9 @@ export default () => (
                         width: 55%;
                     }
                     }
-                    table thead, table tr {
-                        background:none;
-                        border:none;
+                    table, table thead, table tr, table tbody, table td {
+                        background: none;
+                        border: none;
                     }
                     table tbody tr td {
                         border-top:1px solid #00ad69;

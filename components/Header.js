@@ -40,7 +40,7 @@ const Header = () => (
     <header><div className='bg-header'></div></header>
         <style jsx>{`
           header {
-            background:#02272e;
+            background: -webkit-gradient(linear, 0% 90%, 0% 100%, from(#02272e), to(#ffffff));
             height:100%;
             widht:100%;
           }

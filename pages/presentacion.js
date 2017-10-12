@@ -21,8 +21,8 @@ export default () => (
       <section>
         <Observer threshold={1} triggerOnce={true} render={() => (
           <figure className='align-right fade-in'>
-            <img src='/static/tac-creu-blanca.jpg'/>
-            <figcaption><small>TAC Creu Blanca</small></figcaption>
+            <img src='/static/lesio-muscular-creu-blanca.jpg'/>
+            <figcaption><small>Lesión Muscular - Creu Blanca</small></figcaption>
           </figure>
           )} />
 
@@ -31,6 +31,8 @@ export default () => (
           <p>El II Congreso Creu Blanca sobre Lesiones Musculares tiene un enfoque muy práctico basado en la discusión y debate de casos clínicos en un ámbito multidisciplinar que va desde el mecanismo de lesión, diagnóstico, seguimiento, rehabilitación y readaptación hasta el return to play.</p>
           
           <p>Para ello se cuenta con la participación de algunos de los principales especialistas en lesiones musculares de este país y los propios casos clínicos serán presentados por especialistas de renombre internacional y basados en deportistas de élite.</p>
+
+          <br className='clear'/>
         <style jsx>{`
           @media screen and (max-width: 768px) {
             .align-right img {
@@ -42,6 +44,9 @@ export default () => (
             .align-right {
               float:right;
               padding-left:1em;
+            }
+            .clear {
+              clear:both;
             }
           }
           .fade-in {
