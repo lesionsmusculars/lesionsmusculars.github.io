@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { Jumbotron } from 'reactstrap';
+import { Jumbotron } from 'reactstrap'
+import fetch from 'isomorphic-unfetch'
 import Layout from '../components/MyLayout.js'
 
-
-export default () => (
+const CongressProgramm = (props) => (
     <Layout>
     <Head>
       <title>II Congreso Creu Blanca sobre Lesiones Musculares</title>
@@ -23,6 +23,8 @@ export default () => (
                 <section className='congress-data'>
                     <div className='congress-data-programm'>
                         <h1 className='align-center uppercase'>Programa</h1>
+
+
                         <table className='table-scroll'>
                             <thead>
                                 <tr>
@@ -30,112 +32,36 @@ export default () => (
                                     <td></td>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td width='150'>8:00 - 8:30</td>
-                                    <td width='300'><strong className='bold'>Entrega de Documentación</strong></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>8:30 - 9:00</td>
-                                    <td width='300'><strong className='bold'>Presentación de las Jornadas</strong><br/>
-                                    <em>Dra. Enriqueta Alomar</em><br/>
-                                    <small>Directora Médica del Grupo Creu Blanca</small></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>9:00 - 9:45</td>
-                                    <td width='300'><strong className='bold green-creu-blanca'>Anatomía de la Lesión Muscular</strong><br/>
-                                    Cómo se ha de entender la Lesión Muscular a día de hoy<br/>
-                                    <em>Dr. Carles Pedret</em><br/>
-                                    <small>Clínica Mapfre de Medicina del Tenis, Clínica Diagonal y Clínica Creu Blanca</small></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>9:45 - 10:15</td>
-                                    <td width='300'><strong className='bold green-creu-blanca'>Caso Benfica 1 (isquios)</strong><br/>
-                                    <em>Dr. Lluís Til</em><br/>
-                                    <small>Director médico Sport Lisboa e Benfica</small><br/>
-                                    <em>Moderador Dr. Gil Rodas</em><br/>
-                                    <small>Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona</small></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>10:15 - 10:45</td>
-                                    <td width='300'><strong className='bold green-creu-blanca'>Caso FC. Barcelona 1 (isquios)</strong><br/>
-                                    <em>Dr. Ricard Pruna </em><br/>
-                                    <small>Servicios médicos FC. Barcelona</small><br/>
-                                    <em>Dra. Sandra Mechó</em><br/>
-                                    <small>Servicios médicos FC. Barcelona y Radiología Asistencia Sanitaria Colegial</small><br/>
-                                    <em>Sr. Xavier Linde</em><br/>
-                                    <small>Servicios médicos FC. Barcelona</small><br/>
-                                    <em>Moderador Dr. Gil Rodas</em><br/>
-                                    <small>Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona</small></td>
-                                </tr>
-                                <tr className='bg-green-creu-blanca'>
-                                    <td width='150'>10:45 - 11:15</td>
-                                    <td width='300'><strong className='bold'>Coffee Break</strong></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>11:15 - 11:45</td>
-                                    <td width='300'><strong className='bold green-creu-blanca'>Caso Athletic Club de Bilbao</strong><br/>
-                                    <em>Dr. Iñigo Iriarte</em><br/>
-                                    <small>Médico rehabilitador ARS Médica Bilbao</small><br/>
-                                    <em>Dr. Joseán Lekue</em><br/>
-                                    <small>Servicios Médicos Athletic Club  de Bilbao</small><br/>
-                                    <em>Moderador Dr. Lluís Til</em><br/>
-                                    <small>Director médico Sport Lisboa e Benfica</small></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>11:45 - 12:15</td>
-                                    <td width='300'><strong className='bold green-creu-blanca'>Caso Consell Català de l'Esport</strong><br/>
-                                    <em>Dr. Ramón Balius</em><br/>
-                                    <small>Clínica Diagonal y Consell Català de l´Esport</small><br/>
-                                    <em>Moderador Dr. Lluís Til</em><br/>
-                                    <small>Director médico Sport Lisboa e Benfica</small></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>12:15 - 12:45</td>
-                                    <td width='300'><strong className='bold green-creu-blanca'>Caso Hospital Clínic</strong><br/>
-                                    <em>Dr. Gil Rodas</em><br/>
-                                    <small>Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona</small><br/>
-                                    <em>Moderador Dr. Lluís Til</em><br/>
-                                    <small>Director médico Sport Lisboa e Benfica</small></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>12:45 - 13:15</td>
-                                    <td width='300'><strong className='bold green-creu-blanca'>Caso FC. Barcelona 2 (sóleo)</strong><br/>
-                                    <em>Dr. Ricard Pruna </em><br/>
-                                    <small>Servicios médicos FC. Barcelona</small><br/>
-                                    <em>Dra. Sandra Mechó</em><br/>
-                                    <small>Servicios médicos FC. Barcelona y Radiología Asistencia Sanitaria Colegial</small><br/>
-                                    <em>Sr. Xavier Linde</em><br/>
-                                    <small>Servicios médicos FC. Barcelona</small><br/>
-                                    <em>Moderador Dr. Gil Rodas</em><br/>
-                                    <small>Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona</small></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>13:15 - 13:45</td>
-                                    <td width='300'><strong className='bold green-creu-blanca'>Caso Benfica 2</strong><br/>
-                                    <em>Dr. Lluís Til</em><br/>
-                                    <small>Director médico Sport Lisboa e Benfica</small><br/>
-                                    <em>Moderador Dr. Gil Rodas</em><br/>
-                                    <small>Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona</small></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>13:45 - 14:15</td>
-                                    <td width='300'><strong className='bold green-creu-blanca'>Gestión práctica del proceso del return to play</strong><br/>
-                                    <small>Visión desde un banquillo profesional</small><br/>
-                                    <em>Dr. Ricard Pruna </em><br/>
-                                    <small>Servicios médicos FC. Barcelona</small></td>
-                                </tr>
-                                <tr>
-                                    <td width='150'>14:15 - 14:30</td>
-                                    <td width='300'><strong className='bold green-creu-blanca'>Cierre de las Jornadas</strong><br/>
-                                    <em>Dra. Enriqueta Alomar</em><br/>
-                                    <small>Directora Médica del Grupo Creu Blanca</small></td>
-                                </tr>
-                                <tr className='bg-green-creu-blanca'>
-                                    <td width='150'>14:30</td>
-                                    <td width='300'><strong className='bold'>Cocktail</strong></td>
+                            {props.programmitems.sort((a,b) => {
+                                if (a.ID < b.ID) {
+                                  return -1
+                                }
+                                if (a.ID > b.ID) {
+                                  return 1
+                                }
+                                return 0
+                                }).map((programmitem, ID) => (
+                                <tbody key={ID}>
+                                <tr className={programmitem.break == false ? '' : 'bg-green-creu-blanca'}>
+                                    <td width='150'>{programmitem.horari}</td>
+                                    <td width='300'><strong className={programmitem.iscase == true ? 'bold green-creu-blanca' : 'bold'}>{programmitem.titol}</strong>
+                                    {programmitem.drs == "" ? '' : <span><br/>
+                                    {programmitem.drs.map((dr, index) => (
+                                        <span key={index}>
+                                        <em>{dr.nom}</em><br/>
+                                        <small>{dr.carrec}</small><br/>
+                                        </span>
+                                    ))}</span>}
+                                    {programmitem.moderadors == "" ? '' : <span>
+                                    {programmitem.moderadors.map((moderador, index) => (
+                                        <span key={index}>
+                                        <em>{moderador.nom}</em><br/>
+                                        <small>{moderador.carrec}</small><br/>
+                                        </span>
+                                    ))}</span>}</td>
                                 </tr>
                             </tbody>
+                            ))}
                         </table>
                     </div>
                     <div className='congress-data-people'>
@@ -259,3 +185,14 @@ export default () => (
             </div>
     </Layout>
 )
+
+CongressProgramm.getInitialProps = async function() {
+    const res = await fetch(`http://localhost:3000/static/programm-data.json`)
+    const programmitems = await res.json()
+  
+    console.log(`Items del prorama data fetched. Count: ${programmitems.length}`)
+  
+    return { programmitems }
+  }
+  
+  export default CongressProgramm

@@ -1,0 +1,252 @@
+[
+    {
+        "titol":"Entrega de Documentación",
+        "subtitol":"",
+        "horari":"8:00 - 8:30",
+        "drs":"",
+        "moderadors":"",
+        "ID":"001",
+        "break": false,
+        "iscase": false
+    },
+    {
+        "titol":"Presentación de las Jornadas",
+        "subtitol":"",
+        "horari":"8:30 - 9:00",
+        "drs":[
+            {
+                "nom":"Dra. Enriqueta Alomar",
+                "carrec":"Directora Médica del Grupo Creu Blanca"
+            }
+        ],
+        "moderadors":"",
+        "ID":"002",
+        "break": false,
+        "iscase": false
+    },
+    {
+        "titol":"Anatomía de la Lesión Muscular",
+        "subtitol":"Cómo se ha de entender la Lesión Muscular a día de hoy",
+        "horari":"9:00 - 9:45",
+        "drs":[
+            {
+                "nom":"Dr. Carles Pedret",
+                "carrec":"Clínica Mapfre de Medicina del Tenis, Clínica Diagonal y Clínica Creu Blanca"
+            }
+        ],
+        "moderadors":"",
+        "ID":"003",
+        "break": false,
+        "iscase": true
+    },
+    {
+        "titol":"Caso Benfica 1 (isquios)",
+        "subtitol":"",
+        "horari":"9:45 - 10:15",
+        "drs":[
+            {
+                "nom":"Dr. Lluís Til",
+                "carrec":"Director médico Sport Lisboa e Benfica"
+            }
+        ],
+        "moderadors":[
+            {
+                "nom":"Moderador Dr. Gil Rodas",
+                "carrec":"Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona"
+            }
+        ],
+        "ID":"004",
+        "break": false,
+        "iscase": true
+    },
+    {
+        "titol":"Caso FC. Barcelona 1 (isquios)",
+        "subtitol":"",
+        "horari":"10:15 - 10:45",
+        "drs":[
+            {
+                "nom":"Dr. Ricard Pruna",
+                "carrec":"Servicios médicos FC. Barcelona"
+            },
+            {
+                "nom":"Dra. Sandra Mechó",
+                "carrec":"Servicios médicos FC. Barcelona y Radiología Asistencia Sanitaria Colegial"
+            },
+            {
+                "nom":"Sr. Xavier Linde",
+                "carrec":"Servicios médicos FC. Barcelona"
+            }
+        ],
+        "moderadors":[
+            {
+                "nom":"Moderador Dr. Gil Rodas",
+                "carrec":"Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona"
+            }
+        ],
+        "ID":"005",
+        "break": false,
+        "iscase": true
+    },
+    {
+        "titol":"Coffee Break",
+        "subtitol":"",
+        "horari":"10:45 - 11:15",
+        "drs":"",
+        "moderadors":"",
+        "ID":"006",
+        "break": true,
+        "iscase": false
+    },
+    {
+        "titol":"Caso Athletic Club de Bilbao",
+        "subtitol":"",
+        "horari":"11:15 - 11:45",
+        "drs":[
+            {
+                "nom":"Dr. Iñigo Iriarte",
+                "carrec":"Médico rehabilitador ARS Médica Bilbao"
+            },
+            {
+                "nom":"Dr. Joseán Lekue",
+                "carrec":"Servicios Médicos Athletic Club de Bilbao"
+            }
+        ],
+        "moderadors":[
+            {
+                "nom":"Moderador Dr. Lluís Til",
+                "carrec":"Director médico Sport Lisboa e Benfica"
+            }
+        ],
+        "ID":"007",
+        "break": false,
+        "iscase": true
+    },
+    {
+        "titol":"Caso Consell Català de l'Esport",
+        "subtitol":"",
+        "horari":"11:45 - 12:15",
+        "drs":[
+            {
+                "nom":"Dr. Ramón Balius",
+                "carrec":"Clínica Diagonal y Consell Català de l´Esport"
+            }
+        ],
+        "moderadors":[
+            {
+                "nom":"Moderador Dr. Lluís Til",
+                "carrec":"Director médico Sport Lisboa e Benfica"
+            }
+        ],
+        "ID":"008",
+        "break": false,
+        "iscase": true
+    },
+    {
+        "titol":"Caso Hospital Clínic",
+        "subtitol":"",
+        "horari":"12:15 - 12:45",
+        "drs":[
+            {
+                "nom":"Dr. Gil Rodas",
+                "carrec":"Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona"
+            }
+        ],
+        "moderadors":[
+            {
+                "nom":"Moderador Dr. Lluís Til",
+                "carrec":"Director médico Sport Lisboa e Benfica"
+            }
+        ],
+        "ID":"009",
+        "break": false,
+        "iscase": true
+    },
+    {
+        "titol":"Caso FC. Barcelona 2 (sóleo)",
+        "subtitol":"",
+        "horari":"12:45 - 13:15",
+        "drs":[
+            {
+                "nom":"Dr. Ricard Pruna",
+                "carrec":"Servicios médicos FC. Barcelona"
+            },
+            {
+                "nom":"Dra. Sandra Mechó",
+                "carrec":"Servicios médicos FC. Barcelona y Radiología Asistencia Sanitaria Colegial"
+            },
+            {
+                "nom":"Sr. Xavier Linde",
+                "carrec":"Servicios médicos FC. Barcelona"
+            }
+        ],
+        "moderadors":[
+            {
+                "nom":"Moderador Dr. Gil Rodas",
+                "carrec":"Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona"
+            }
+        ],
+        "ID":"010",
+        "break": false,
+        "iscase": true
+    },
+    {
+        "titol":"Caso Benfica 2",
+        "subtitol":"",
+        "horari":"13:15 - 13:45",
+        "drs":[
+            {
+                "nom":"Dr. Lluís Til",
+                "carrec":"Director médico Sport Lisboa e Benfica"
+            }
+        ],
+        "moderadors":[
+            {
+                "nom":"Moderador Dr. Gil Rodas",
+                "carrec":"Jefe de Servicio de Medicina Deportiva Hospital Clínico de Barcelona"
+            }
+        ],
+        "ID":"011",
+        "break": false,
+        "iscase": true
+    },
+    {
+        "titol":"Gestión práctica del proceso del return to play",
+        "subtitol":"Visión desde un banquillo profesional",
+        "horari":"13:45 - 14:15",
+        "drs":[
+            {
+                "nom":"Dr. Ricard Pruna",
+                "carrec":"Servicios médicos FC. Barcelona"
+            }
+        ],
+        "moderadors":"",
+        "ID":"012",
+        "break": false,
+        "iscase": true
+    },
+    {
+        "titol":"Cierre de las Jornadas",
+        "subtitol":"",
+        "horari":"14:15 - 14:30",
+        "drs":[
+            {
+                "nom":"Dra. Enriqueta Alomar",
+                "carrec":"Directora Médica del Grupo Creu Blanca"
+            }
+        ],
+        "moderadors":"",
+        "ID":"013",
+        "break": false,
+        "iscase": false
+    },
+    {
+        "titol":"Cocktail",
+        "subtitol":"",
+        "horari":"14:30",
+        "drs":"",
+        "moderadors":"",
+        "ID":"014",
+        "break": true,
+        "iscase": false
+    }
+]
