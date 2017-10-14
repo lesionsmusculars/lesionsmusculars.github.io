@@ -187,7 +187,7 @@ const CongressProgramm = (props) => (
 )
 
 CongressProgramm.getInitialProps = async function() {
-    const res = await fetch(`http://localhost:3000/static/programm-data.json`)
+    const res = await fetch(`https://lesionsdata.now.sh/programm-data.json`)
     const programmitems = await res.json()
   
     console.log(`Items del prorama data fetched. Count: ${programmitems.length}`)
