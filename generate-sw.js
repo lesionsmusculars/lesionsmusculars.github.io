@@ -89,15 +89,6 @@ workboxSW.strategies.staleWhileRevalidate({
   cacheableResponse: {statuses: [0, 200]}
 })
 )
-workboxSW.router.registerRoute('https://fonts.googleapis.com/(.*)',
-workboxSW.strategies.cacheFirst({
-  cacheName: 'fontgoogleapis',
-  cacheExpiration: {
-	maxEntries: 20
-  },
-  cacheableResponse: {statuses: [0, 200]}
-})
-)
 workboxSW.router.registerRoute('https://maps.googleapis.com/(.*)',
 workboxSW.strategies.cacheFirst({
   cacheName: 'mapsgoogleapis',
