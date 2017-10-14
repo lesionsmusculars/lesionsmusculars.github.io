@@ -39,7 +39,6 @@ const Header = () => (
     <header><div className='bg-header'></div></header>
         <style jsx>{`
           header {
-            background: -webkit-gradient(linear, 0% 90%, 0% 100%, from(#02272e), to(#ffffff));
             height:100%;
             widht:100%;
           }
@@ -60,6 +59,22 @@ const Header = () => (
               padding:.5em;
               height:468px;
               width:768px;
+            }
+          }
+          @media screen and (min-width: 1024px) {
+          .bg-header {
+              background: url('/static/bg-congres-creu-blanca-lesions-musculars-1024.png');
+              padding:.5em;
+              height:623px;
+              width:1024px;
+            }
+          }
+          @media screen and (min-width: 1360px) {
+          .bg-header {
+              background: url('/static/bg-congres-creu-blanca-lesions-musculars.png');
+              padding:.5em;
+              height:686px;
+              width:1134px;
             }
           }
         `}</style>
