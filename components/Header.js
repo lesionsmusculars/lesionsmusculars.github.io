@@ -47,34 +47,34 @@ const Header = () => (
           }
           @media screen and (min-width: 320px) {
           .bg-header {
-              background: url('/static/bg-congres-creu-blanca-lesions-musculars-320.png');
+              background: url('/static/bg-congres-creu-blanca-lesions-musculars-320.jpg');
               padding:.25em;
-              height:195px;
+              height:192px;
               width:320px;
             }
           }
           @media screen and (min-width: 768px) {
           .bg-header {
-              background: url('/static/bg-congres-creu-blanca-lesions-musculars-768.png');
+              background: url('/static/bg-congres-creu-blanca-lesions-musculars-768.jpg');
               padding:.5em;
-              height:468px;
+              height:461px;
               width:768px;
             }
           }
           @media screen and (min-width: 1024px) {
           .bg-header {
-              background: url('/static/bg-congres-creu-blanca-lesions-musculars-1024.png');
+              background: url('/static/bg-congres-creu-blanca-lesions-musculars-1024.jpg');
               padding:.5em;
-              height:623px;
+              height:614px;
               width:1024px;
             }
           }
           @media screen and (min-width: 1360px) {
           .bg-header {
-              background: url('/static/bg-congres-creu-blanca-lesions-musculars.png');
+              background: url('/static/bg-congres-creu-blanca-lesions-musculars.jpg');
               padding:.5em;
-              height:686px;
-              width:1134px;
+              height:816px;
+              width:1360px;
             }
           }
         `}</style>
