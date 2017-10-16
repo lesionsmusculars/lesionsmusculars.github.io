@@ -16,6 +16,9 @@ const Footer = () => (
 
         <section>
           <p className='blue-congress'>Creu Blanca &#169; 2017
+          <Link prefetch href="/la-sede">
+            <a style={linkStyle}>La sede</a>
+          </Link>
           <Link prefetch href="/aviso-legal">
             <a style={linkStyle}>Aviso Legal</a>
           </Link>

@@ -3,7 +3,7 @@
   
 @font-face {font-family: 'Carnas-Light';src: url('/static/webfonts/30F44B_1_0.eot');src: url('/static/webfonts/30F44B_1_0.eot?#iefix') format('embedded-opentype'),url('/static/webfonts/30F44B_1_0.woff2') format('woff2'),url('/static/webfonts/30F44B_1_0.woff') format('woff'),url('/static/webfonts/30F44B_1_0.ttf') format('truetype'),url('/static/webfonts/30F44B_1_0.svg#wf') format('svg');}
 
-body {font-family: 'Carnas-Light', sans-serif;color: #6a6a6a;font-size:1.5rem; font-weight: 100;}
+body {font-family: 'Carnas-Light', sans-serif;color: #6a6a6a;font-size:1.1rem; font-weight: 100;}
 h1, h2, h3, h4, h5, h6 {font-family: 'Carnas-Light', sans-serif;font-weight: 100;}
 
 ul.no-style {

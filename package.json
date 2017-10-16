@@ -1,6 +1,6 @@
 {
   "name": "lesions-musculars",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -36,7 +36,8 @@
     "react-google-maps": "next",
     "react-intersection-observer": "1.0.0",
     "react-intl": "^2.4.0",
-    "reactstrap": "4.8.0"
+    "reactstrap": "4.8.0",
+    "recompose": "^0.26.0"
   },
   "devDependencies": {
     "globby": "6.1.0",

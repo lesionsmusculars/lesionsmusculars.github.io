@@ -1,8 +1,32 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { Jumbotron } from 'reactstrap'
+import dynamic from 'next/dynamic'
 import fetch from 'isomorphic-unfetch'
 import Layout from '../components/MyLayout.js'
+
+const GoogleMapReact = dynamic(
+  import('google-map-react'),
+  {
+    loading: () => (<p>cargando ...</p>)
+  }
+)
+
+const markerStyle = {
+  'background-color': '#ffffff',
+  width: '50px',
+  'text-align': 'center',
+  padding: '.5em',
+  'position': 'relative',
+  right: 25,
+  bottom: 25,
+  'border-radius': '50%'
+
+}
+
+const MarkerComponent = ({ text }) => <div style={markerStyle}>{text}</div>;
+
+const ZOOM = 16
 
 const CongressProgramm = (props) => (
     <Layout>
@@ -98,6 +122,20 @@ const CongressProgramm = (props) => (
                             <li>Preparadores físicos, Readaptadores e INEF</li>
                         </ul>
                     </div>
+                </section>
+                <section>
+                    <div style={{width: '100%', height: '500px'}}>     
+                        <GoogleMapReact
+                            center={[Number(41.3835246), Number(2.1096141)]}
+                            zoom={ZOOM}
+                            >                            
+                            <MarkerComponent
+                                lat={41.3835246}
+                                lng={2.1096141}
+                                text={<Link prefetch href={'/la-sede'}><a title={'Sede: Palau de Congressos de Catalunya'}><span><img src={'/static/32/lesions-musculars-creu-blanca-32.png'} /></span></a></Link>}
+                            />
+                            </GoogleMapReact>
+                        </div>
                 </section>
                 <style jsx>{`
                     .call-to-action {
