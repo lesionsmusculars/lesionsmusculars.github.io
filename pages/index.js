@@ -69,6 +69,7 @@ const CongressProgramm = (props) => (
                                 <tr className={programmitem.break == false ? '' : 'bg-green-creu-blanca'}>
                                     <td width='150'>{programmitem.horari}</td>
                                     <td width='300'><strong className={programmitem.iscase == true ? 'bold green-creu-blanca' : 'bold'}>{programmitem.titol}</strong>
+                                    {programmitem.subtitol =="" ? '' : <span><br/>{programmitem.subtitol}</span>}
                                     {programmitem.drs == "" ? '' : <span><br/>
                                     {programmitem.drs.map((dr, index) => (
                                         <span key={index}>
