@@ -19,14 +19,15 @@ export default () => (
         `}</style>
       </nav>
       <section>
+
+        <h1 className='green-creu-blanca'>¿Qué es Creu Blanca?</h1>
+
         <Observer threshold={1} triggerOnce={true} render={() => (
           <figure className='align-left fade-in'>
             <img src='/static/seu-creu-blanca.jpg'/>
             <figcaption><small>Sede de Creu Blanca</small></figcaption>
           </figure>
           )} />
-
-        <h1>¿Qué es Creu Blanca?</h1>
         
         <p>Fundada en 1950, Creu Blanca es un grupo de empresas familiar (5 centros en Barcelona y 2 en Zaragoza) especializados en la prevención, el diagnóstico y el tratamiento de la salud, que cuenta con más de 250 profesionales de la medicina de todas las especialidades médicas.</p>
 
@@ -42,6 +43,9 @@ export default () => (
 
         <p>Por nuestras instalaciones han pasado, y pasan, jugadores del FCB y el RCDE y deportistas del Consell Català de l’Esport.</p>
         <style jsx>{`
+          .green-creu-blanca {
+              color:#00ad69;
+          }
           @media screen and (max-width: 768px) {
             .align-left img {
               margin:0 auto;

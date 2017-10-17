@@ -138,6 +138,9 @@ const CongressProgramm = (props) => (
                         </div>
                 </section>
                 <style jsx>{`
+                    .call-to-action p, .call-to-action h1, .congress-data h1, .congress-data p, .congress-data td, .congress-data ul {
+                        line-height:1.2;
+                    }
                     .call-to-action {
                         text-align:center;
                         margin:0 auto;

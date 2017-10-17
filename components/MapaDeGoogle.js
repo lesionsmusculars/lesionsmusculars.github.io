@@ -1,4 +1,3 @@
-import { compose, withProps, withStateHandlers } from "recompose"
 import { withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps";
 
 const GET_DIRECTIONS = 'https://www.google.com/maps/dir/?api=1&destination=';
@@ -6,7 +5,7 @@ const GET_DIRECTIONS = 'https://www.google.com/maps/dir/?api=1&destination=';
 const SimpleMapExampleGoogleMap = withGoogleMap( props => {
     console.log("here new props are used", props)
     return <GoogleMap
-      defaultZoom={12}
+      defaultZoom={14}
       defaultCenter={new google.maps.LatLng(props.lat, props.lng)}
       >
         <Marker
@@ -42,10 +41,10 @@ class MapaDeGoogle extends React.Component{
                 code={this.state.code}
                 city={this.state.city}
                 containerElement={
-                  <div style={{ height: `300px`, marginBottom: `2em` }} />
+                  <div style={{ height: `500px`, marginBottom: `2em` }} />
                 }
                 mapElement={
-                  <div style={{ height: `300px`, marginBottom: `2em` }} />
+                  <div style={{ height: `500px`, marginBottom: `2em` }} />
                 }
             />
     }

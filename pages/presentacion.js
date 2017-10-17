@@ -19,14 +19,15 @@ export default () => (
         `}</style>
       </nav>
       <section>
-        <Observer threshold={1} triggerOnce={true} render={() => (
-          <figure className='align-right fade-in'>
-            <img src='/static/lesio-muscular-creu-blanca.jpg'/>
-            <figcaption><small>Lesión Muscular - Creu Blanca</small></figcaption>
-          </figure>
-          )} />
 
-          <h1>Presentación del Congreso</h1>
+          <h1 className='green-creu-blanca'>Presentación del Congreso</h1>
+
+          <Observer threshold={1} triggerOnce={true} render={() => (
+            <figure className='align-right fade-in'>
+              <img src='/static/lesio-muscular-creu-blanca.jpg'/>
+              <figcaption><small>Lesión Muscular - Creu Blanca</small></figcaption>
+            </figure>
+            )} />
         
           <p>El II Congreso Creu Blanca sobre Lesiones Musculares tiene un enfoque muy práctico basado en la discusión y debate de casos clínicos en un ámbito multidisciplinar que va desde el mecanismo de lesión, diagnóstico, seguimiento, rehabilitación y readaptación hasta el return to play.</p>
           
@@ -34,6 +35,9 @@ export default () => (
 
           <br className='clear'/>
         <style jsx>{`
+          .green-creu-blanca {
+              color:#00ad69;
+          }
           @media screen and (max-width: 768px) {
             .align-right img {
               margin:0 auto;
