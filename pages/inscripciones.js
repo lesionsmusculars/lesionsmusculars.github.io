@@ -34,26 +34,18 @@ export default () => (
         <hr/>
         
         <Row>
-          <Col sm="4">
-            <Card body>
-              <CardTitle>Special Title Treatment</CardTitle>
-              <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-              <Button>Go somewhere</Button>
-            </Card>
-          </Col>
-          <Col sm="5">
+          <Col sm="6">
             <Card inverse style={{ backgroundColor: '#00ad69', borderColor: '#00ad69' }}>
-              <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-              <CardTitle className='margin-top'>Special Title Treatment</CardTitle>
-              <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-              <Button>Go somewhere</Button>
+              <CardTitle className='margin-top'>Profesional</CardTitle>
+              <CardText>Acceso profesional <strong>150€</strong>.</CardText>
+              <Link href='#'><a className='btn btn-secondary'>Inscríbete</a></Link>
             </Card>
           </Col>
-          <Col sm="3">
+          <Col sm="6">
             <Card body>
-              <CardTitle>Special Title Treatment</CardTitle>
-              <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-              <Button>Go somewhere</Button>
+              <CardTitle>Bonificado</CardTitle>
+              <CardText>Disponemos de accesos bonificados de hasta un <strong>25% de descuento</strong> para colectivos profesionales.</CardText>
+              <Link href='#'><a className='btn btn-secondary'>Inscríbete</a></Link>
             </Card>
           </Col>
         </Row>

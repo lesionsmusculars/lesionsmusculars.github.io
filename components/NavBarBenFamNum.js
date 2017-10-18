@@ -22,7 +22,7 @@ export default class NavBarBenFamNum extends React.Component {
         <Navbar inverse toggleable>
           <NavbarToggler left onClick={this.toggle} />
           <Link prefetch href="/"><NavbarBrand>
-            <img src='/static/logo-creu-blanca.png' alt='Inicio' />
+            <img src='/static/logo-creu-blanca.jpg' alt='Inicio' />
           </NavbarBrand></Link>
           <span className='align-nav'>
             <Collapse isOpen={this.state.isOpen} navbar>
