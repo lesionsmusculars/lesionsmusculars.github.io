@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import Layout from '../components/MyLayout.js'
+import FontAwesome from 'react-fontawesome'
+import { Card, CardImg, CardBody, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
 
 export default () => (
     <Layout>
@@ -18,14 +20,53 @@ export default () => (
       </nav>
 
       <section className='call-to-action'>
+
+        <FontAwesome
+          name='credit-card'
+          size='2x'
+          style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+        />
+
         <h1>Inscripciones</h1>
 
-        <figure><img src='http://www.familiasnumerosas.org/fileadmin/user_upload/Destacados/Imagenhome2016familiasnumerosas.jpg' width='100%' height='324' alt='Imagen hazte socio Familias Numerosas' title='Imagen hazte socio Familias Numerosas'/></figure>
+        <p><small>Obtén tu acceso. Todavía están <span className='green-creu-blanca'>disponibles</span></small></p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <hr/>
+        
+        <Row>
+          <Col sm="4">
+            <Card body>
+              <CardTitle>Special Title Treatment</CardTitle>
+              <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+              <Button>Go somewhere</Button>
+            </Card>
+          </Col>
+          <Col sm="5">
+            <Card inverse style={{ backgroundColor: '#00ad69', borderColor: '#00ad69' }}>
+              <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+              <CardTitle className='margin-top'>Special Title Treatment</CardTitle>
+              <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+              <Button>Go somewhere</Button>
+            </Card>
+          </Col>
+          <Col sm="3">
+            <Card body>
+              <CardTitle>Special Title Treatment</CardTitle>
+              <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+              <Button>Go somewhere</Button>
+            </Card>
+          </Col>
+        </Row>
+
+        <hr/>
+
+        <p><small>You will be redirected to our partner <strong>EventBrite</strong> in order to get your ticket</small></p>
 
 
         <style jsx>{`
+          .green-creu-blanca {
+              color:#00ad69;
+          }
             .call-to-action {
                 text-align:center;
                 margin:0 auto;
@@ -35,6 +76,9 @@ export default () => (
             }
             h1, h2 {
               color:#00ad69;
+            }
+            .margin-top {
+              margin-top:1em;
             }
             @media screen and (min-width: 320px) {   
                 .call-to-action {
@@ -48,12 +92,12 @@ export default () => (
             }
             @media screen and (min-width: 768px) {   
                 .call-to-action {
-                width: 70%;
+                width: 80%;
                 }
             }
             @media screen and (min-width: 1366px) {   
                 .call-to-action {
-                width: 62%;
+                width: 72%;
                 }
             }
         `}</style>

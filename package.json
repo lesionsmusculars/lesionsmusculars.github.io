@@ -33,11 +33,11 @@
     "react-addons-css-transition-group": "15.6.0",
     "react-addons-transition-group": "15.6.0",
     "react-dom": "^16.0.0",
+    "react-fontawesome": "^1.6.1",
     "react-google-maps": "next",
     "react-intersection-observer": "1.0.0",
     "react-intl": "^2.4.0",
-    "reactstrap": "4.8.0",
-    "recompose": "^0.26.0"
+    "reactstrap": "4.8.0"
   },
   "devDependencies": {
     "globby": "6.1.0",
