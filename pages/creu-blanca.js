@@ -50,6 +50,9 @@ export default () => (
             .align-left img {
               margin:0 auto;
               display:block;
+            }
+            .align-left figcaption {
+              text-align:center;
             }  
           }
           @media screen and (min-width: 1024px) {

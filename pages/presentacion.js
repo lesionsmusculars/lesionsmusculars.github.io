@@ -42,7 +42,10 @@ export default () => (
             .align-right img {
               margin:0 auto;
               display:block;
-            }  
+            }
+            .align-right figcaption {
+              text-align:center;
+            }
           }
           @media screen and (min-width: 1024px) {
             .align-right {

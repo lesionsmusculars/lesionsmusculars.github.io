@@ -12,7 +12,7 @@ const SimpleMapExampleGoogleMap = withGoogleMap( props => {
         position={new google.maps.LatLng(props.lat, props.lng)}
         >
             <InfoWindow>
-                <div>Dirección: {props.address},<br/>{props.code} {props.city}<br/><a href={GET_DIRECTIONS + (props.lat) + ',' + (props.lng)}>Cómo llegar</a></div>
+                <div><strong>{props.name}</strong><br/>{props.address},<br/>{props.code} {props.city}<br/><a href={GET_DIRECTIONS + (props.lat) + ',' + (props.lng)}>Cómo llegar</a></div>
             </InfoWindow>
         </Marker>
     </GoogleMap>
@@ -23,6 +23,7 @@ class MapaDeGoogle extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
+            name: this.props.name,
             lat: this.props.lat,
             lng: this.props.lng,
             address: this.props.address,
@@ -35,6 +36,7 @@ class MapaDeGoogle extends React.Component{
         console.log("New props ", this.props)
 
         return <SimpleMapExampleGoogleMap
+                name={this.state.name}
                 lat={this.state.lat}
                 lng={this.state.lng}
                 address={this.state.address}

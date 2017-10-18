@@ -47,6 +47,12 @@ const CongressProgramm = (props) => (
                 <section className='congress-data'>
                     <div className='congress-data-programm'>
                         <h1 className='align-center uppercase'>Programa</h1>
+                    </div>
+                    <div className='congress-data-people'>
+                    </div>
+                </section>
+                <section className='congress-data'>
+                    <div className='congress-data-programm'>
 
 
                         <table className='table-scroll'>
@@ -91,37 +97,26 @@ const CongressProgramm = (props) => (
                     </div>
                     <div className='congress-data-people'>
                         <p className='green-creu-blanca uppercase'>Están colaborando en la elaboración y presentación de los casos clínicos</p>
-                        <p><strong className='bold'>Especialistas de la Clínica Creu Blanca</strong></p>
-                        <ul className='no-style'>
-                            <li>Dr. Xavier Alomar</li>
-                            <li>Dr. Calres Pedret</li>
-                            <li>Dra. Mireia Bossy</li>
-                        </ul>
-                        <p><strong className='bold'>Especialistas del Consell Català de l'Esport</strong></p>
-                        <ul className='no-style'>
-                            <li>Dr. Ramon Balius</li>
-                        </ul>
-                        <p><strong className='bold'>Especialistas del FC. Barcelona</strong></p>
-                        <ul className='no-style'>
-                            <li>Médicos y rehabilitadores del primer equipo</li>
-                        </ul>
-                        <p><strong className='bold'>Especialistas del Athletic Club de Bilbao</strong></p>
-                        <ul className='no-style'>
-                            <li>Íñigo Iriarte</li>
-                        </ul>
-                        <p><strong className='bold'>Especialistas de la Unidad de Medicina del Deporte del Hospital Clínic de Barcelona</strong></p>
-                        <ul className='no-style'>
-                            <li>Dr. Gil Rodas</li>
-                        </ul>
-                        <p><strong className='bold'>Especialistas del Villareal Club de Fútbol</strong></p>
-                        <ul className='no-style'>
-                            <li>Médicos y rehabilitadores del primer equipo</li>
-                        </ul>
-                        <p className='green-creu-blanca uppercase'>Dirigido a</p>
-                        <ul className='no-style'>
-                            <li>Médicos del deporte, Traumatólogos, Fisioterapeutas y Rehabilitadores</li>
-                            <li>Preparadores físicos, Readaptadores e INEF</li>
-                        </ul>
+
+                        {props.specialistsitems.sort((a,b) => {
+                            if (a.id < b.id) {
+                                return -1
+                            }
+                            if (a.id > b.id) {
+                                return 1
+                            }
+                            return 0
+                            }).map((specialistsitem, ID) => (
+                            <div>
+                                <p><strong className='bold'>{specialistsitem.type}</strong></p>
+                                <ul className='no-style'>
+                                    {specialistsitem.drs.map((dr, index) => (
+                                        <li key={index}>
+                                            <span>{dr.name}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>))}
                     </div>
                 </section>
                 <section>
@@ -230,11 +225,13 @@ const CongressProgramm = (props) => (
 
 CongressProgramm.getInitialProps = async function() {
     const res = await fetch(`https://lesionsdata.now.sh/programm-data.json`)
+    const res2 = await fetch(`https://lesionsdata.now.sh/specialists.json`)
     const programmitems = await res.json()
+    const specialistsitems = await res2.json()
   
-    console.log(`Items del prorama data fetched. Count: ${programmitems.length}`)
+    console.log(`Items del prorama data fetched. Count: ${programmitems.length}, ${specialistsitems.length}`)
   
-    return { programmitems }
+    return { programmitems, specialistsitems }
   }
   
   export default CongressProgramm

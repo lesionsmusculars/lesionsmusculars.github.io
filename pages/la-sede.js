@@ -59,7 +59,7 @@ export default () => (
         <br className='clear'/>
       <section>
         
-        <MapaDeGoogle lat={41.3835246} lng={2.1096141} address={`Avinguda Diagonal 661-671`} code={'08028'} city={'Barcelona'}/>
+        <MapaDeGoogle name={'Palau de Congressos de Catalunya'} lat={41.3835246} lng={2.1096141} address={`Avinguda Diagonal 661-671`} code={'08028'} city={'Barcelona'}/>
           </section>
         <style jsx>{`
           .green-creu-blanca {
@@ -69,6 +69,10 @@ export default () => (
             .align-right img, .align-left img {
               margin:0 auto;
               display:block;
+            }
+            .align-right figcaption,
+            .align-left figcaption {
+              text-align:center;
             }  
           }
           @media screen and (min-width: 1024px) {
