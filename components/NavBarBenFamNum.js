@@ -22,7 +22,7 @@ export default class NavBarBenFamNum extends React.Component {
         <Navbar inverse toggleable>
           <NavbarToggler left onClick={this.toggle} />
           <Link prefetch href="/"><NavbarBrand>
-            <img src='/static/logo-creu-blanca.jpg' alt='Inicio' />
+            <img src='/static/marca-creu-blanca.jpg' alt='Inicio' />
           </NavbarBrand></Link>
           <span className='align-nav'>
             <Collapse isOpen={this.state.isOpen} navbar>
@@ -35,6 +35,9 @@ export default class NavBarBenFamNum extends React.Component {
                 </Link></NavItem>
                 <NavItem><Link prefetch href="/creu-blanca">
                   <a>¿Qué es Creu Blanca?</a>
+                </Link></NavItem>
+                <NavItem><Link prefetch href="/secretaria-tecnica">
+                  <a>Secretaría Técnica</a>
                 </Link></NavItem>
               </Nav>
             </Collapse>
