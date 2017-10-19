@@ -36,19 +36,34 @@ export default () => (
         <Row>
           <Col sm="6">
             <Card inverse style={{ backgroundColor: '#00ad69', borderColor: '#00ad69' }}>
-              <CardTitle className='margin-top'>Profesional</CardTitle>
-              <CardText>Acceso profesional <strong>150€</strong>.</CardText>
+              <CardTitle className='margin-top'>Profesionales</CardTitle>
+              <CardText>Inscripción profesional <strong>150€</strong>.</CardText>
               <Link href='#'><a className='btn btn-secondary'>Inscríbete</a></Link>
             </Card>
           </Col>
-          <Col sm="6">
+          <Col sm="3">
             <Card body>
-              <CardTitle>Bonificado</CardTitle>
-              <CardText>Disponemos de accesos bonificados de hasta un <strong>25% de descuento</strong> para colectivos profesionales.</CardText>
+              <CardTitle>Asociados</CardTitle>
+              <CardText>Inscripciones para los miembros de:</CardText>
+              <Link href='#'><a className='btn btn-secondary'>Inscríbete</a></Link>
+            </Card>
+          </Col>
+          <Col sm="3">
+            <Card body>
+              <CardTitle>Patrocinadores</CardTitle>
+              <CardText>Inscripciones para patrocinadores</CardText>
               <Link href='#'><a className='btn btn-secondary'>Inscríbete</a></Link>
             </Card>
           </Col>
         </Row>
+
+        <h2>La inscripción incluye:</h2>
+
+        <p>Asistencia a las jornadas<br/>
+        Material de las jornadas<br/>
+        Acreditación y diploma asistencia a las jornadas<br/>
+        Coffee break<br/>
+        Cockatil de clausura</p>
 
         <hr/>
 
