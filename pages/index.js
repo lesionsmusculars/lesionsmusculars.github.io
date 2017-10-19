@@ -48,8 +48,7 @@ const CongressProgramm = (props) => (
                     <div className='congress-data-programm'>
                         <h1 className='align-center uppercase'>Programa</h1>
                     </div>
-                    <div className='congress-data-people'>
-                    </div>
+                    <div className='congress-data-people'/>
                 </section>
                 <section className='congress-data'>
                     <div className='congress-data-programm'>
@@ -111,7 +110,7 @@ const CongressProgramm = (props) => (
                                 <p><strong className='bold'>{specialistsitem.type}</strong></p>
                                 <ul className='no-style'>
                                     {specialistsitem.drs.map((dr, index) => (
-                                        <li key={index}>
+                                        <li className='dark-color' key={index}>
                                             <span>{dr.name}</span>
                                         </li>
                                     ))}
@@ -149,6 +148,9 @@ const CongressProgramm = (props) => (
                     }
                     .green-creu-blanca {
                         color:#00ad69;
+                    }
+                    .dark-color {
+                        color:#1d1d1b;
                     }
                     .bg-green-creu-blanca {
                         color:#ffffff;
