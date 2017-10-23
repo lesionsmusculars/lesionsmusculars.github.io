@@ -1,6 +1,6 @@
 {
   "name": "lesions-musculars",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "description": "",
   "main": "server.js",
   "scripts": {
