@@ -30,8 +30,14 @@ export default class NavBarBenFamNum extends React.Component {
                 <NavItem><Link prefetch href="/presentacion">
                   <a>Presentación</a>
                 </Link></NavItem>
+                <NavItem><Link prefetch href="/">
+                  <a>Programa</a>
+                </Link></NavItem>
                 <NavItem><Link prefetch href="/inscripciones">
                   <a>Inscripciones</a>
+                </Link></NavItem>
+                <NavItem><Link prefetch href="/patrocinio">
+                  <a>Patrocinio</a>
                 </Link></NavItem>
                 <NavItem><Link prefetch href="/creu-blanca">
                   <a>¿Qué es Creu Blanca?</a>

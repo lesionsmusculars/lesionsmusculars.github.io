@@ -34,36 +34,48 @@ export default () => (
         <hr/>
         
         <Row>
-          <Col sm="6">
+          <Col sm="12">
             <Card inverse style={{ backgroundColor: '#00ad69', borderColor: '#00ad69' }}>
-              <CardTitle className='margin-top'>Profesionales</CardTitle>
-              <CardText>Inscripción profesional <strong>150€</strong>.</CardText>
-              <Link href='#'><a className='btn btn-secondary'>Inscríbete</a></Link>
+              <CardTitle className='margin-top'>Inscripciones a las Jornadas</CardTitle>
+              <CardText><strong>150€</strong> <small>(IVA i gastos de emisión no incluídos)</small>.</CardText>
+              <Link href='https://www.eventbrite.es/e/entradas-ii-congreso-creu-blanca-sobre-lesiones-musculares-39181698515'><a target='_blank' className='btn btn-secondary'>Inscríbete</a></Link>
             </Card>
           </Col>
-          <Col sm="3">
+        </Row>
+        
+        <Row>
+          <Col sm="6">
             <Card body>
-              <CardTitle>Asociados</CardTitle>
-              <CardText>Inscripciones para los miembros de:</CardText>
-              <Link href='#'><a className='btn btn-secondary'>Inscríbete</a></Link>
+              <CardTitle>Inscripciones Asociaciones colaboradoras a las Jornadas</CardTitle>
+              <CardText>Inscripciones para los miembros de(*)</CardText>
+              <Link href='https://www.eventbrite.es/e/entradas-ii-congreso-creu-blanca-sobre-lesiones-musculares-39181698515'><a target='_blank' className='btn btn-secondary'>Inscríbete</a></Link>
             </Card>
           </Col>
-          <Col sm="3">
+          <Col sm="6">
             <Card body>
-              <CardTitle>Patrocinadores</CardTitle>
+              <CardTitle>Inscripciones Patrocinadores de las Jornadas</CardTitle>
               <CardText>Inscripciones para patrocinadores</CardText>
-              <Link href='#'><a className='btn btn-secondary'>Inscríbete</a></Link>
+              <Link href='https://www.eventbrite.es/e/entradas-ii-congreso-creu-blanca-sobre-lesiones-musculares-39181698515'><a target='_blank' className='btn btn-secondary'>Inscríbete</a></Link>
             </Card>
           </Col>
         </Row>
 
+        <p className='text-left'>(*) Inscripciones para los miembros de:</p>
+
+        <ul className='no-style text-left'>
+          <li>INEF</li>
+          <li>Consell Català de l'Esport</li>
+        </ul>
+
         <h2>La inscripción incluye:</h2>
 
-        <p>Asistencia a las jornadas<br/>
-        Material de las jornadas<br/>
-        Acreditación y diploma asistencia a las jornadas<br/>
-        Coffee break<br/>
-        Cockatil de clausura</p>
+        <ul className='no-style text-left'>
+          <li>Asistencia a las jornadas</li>
+          <li>Material de las jornadas</li>
+          <li>Acreditación y diploma asistencia a las jornadas</li>
+          <li>Coffee break</li>
+          <li>Cockatil de clausura</li>
+        </ul>
 
         <hr/>
 
