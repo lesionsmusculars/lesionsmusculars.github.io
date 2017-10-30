@@ -25,7 +25,7 @@ export default () => (
 
         <p><strong>AtelierMICE</strong><br/>
         Pere IV, 344 08019, Barcelona<br/>
-        +34 935320274<br/>
+        +34 937638894<br/>
         <Link href='mailto:ateliermice@ateliermice.com'>ateliermice@ateliermice.com</Link></p>
 
 
