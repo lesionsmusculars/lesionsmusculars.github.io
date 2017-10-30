@@ -79,9 +79,9 @@ workboxSW.router.registerRoute(
 	'/',
 	workboxSW.strategies.staleWhileRevalidate()
 )
-workboxSW.router.registerRoute('https://gestorbeneficios.familiasnumerosas.org/wp-json/(.*)',
+workboxSW.router.registerRoute('https://lesionsdata.now.sh/(.*)',
 workboxSW.strategies.staleWhileRevalidate({
-  cacheName: 'jsonwordpress',
+  cacheName: 'jsonnowsh',
   cacheExpiration: {
 	maxEntries: 100,
 	maxAgeSeconds: 7 * 24 * 60 * 60
