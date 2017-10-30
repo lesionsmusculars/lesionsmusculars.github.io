@@ -37,7 +37,7 @@ export default () => (
           <Col sm="12">
             <Card inverse style={{ backgroundColor: '#00ad69', borderColor: '#00ad69' }}>
               <CardTitle className='margin-top'>Inscripciones a las Jornadas</CardTitle>
-              <CardText><strong>150€</strong> <small>(IVA i gastos de emisión no incluídos)</small>.</CardText>
+              <CardText><strong>150€</strong> <small>(IVA y gastos de emisión incluídos)</small>.</CardText>
               <Link href='https://www.eventbrite.es/e/entradas-ii-congreso-creu-blanca-sobre-lesiones-musculares-39181698515'><a target='_blank' className='btn btn-secondary'>Inscríbete</a></Link>
             </Card>
           </Col>
@@ -67,7 +67,7 @@ export default () => (
           <li>Consell Català de l'Esport</li>
         </ul>
 
-        <h2>La inscripción incluye:</h2>
+        <h2>Todas las Inscripciones incluyen:</h2>
 
         <ul className='no-style text-left'>
           <li>Asistencia a las jornadas</li>
