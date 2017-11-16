@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { Jumbotron } from 'reactstrap'
 import dynamic from 'next/dynamic'
-import Observer from 'react-intersection-observer'
 import fetch from 'isomorphic-unfetch'
 import Layout from '../components/MyLayout.js'
 
@@ -96,34 +95,27 @@ const CongressProgramm = (props) => (
                         </table>
                     </div>
                     <div className='congress-data-people'>
-                        
-                        <Observer threshold={1} triggerOnce={true} render={() => (
-                            <figure className='align-right fade-in'>
-                            <img src='/static/logo-toshiba-medical-congres-creu-blanca-lesions-musculars.jpg'/>
-                            <figcaption className='align-center green-creu-blanca'><h2>Patrocinio</h2></figcaption>
-                            </figure>
-                            )} />
-                        
-                        <Observer threshold={1} triggerOnce={true} render={() => (
-                            <figure className='align-right fade-in'>
-                            <img src='/static/logo-setrade-congres-creu-blanca-lesions-musculars.jpg'/>
-                            <figcaption className='align-center green-creu-blanca'><h2>Auspicio</h2></figcaption>
-                            </figure>
-                            )} /> 
-                        
-                        <Observer threshold={1} triggerOnce={true} render={() => (
-                            <figure className='align-right fade-in'>
-                            <img src='/static/lesio-muscular-creu-blanca.jpg'/>
-                            <figcaption><small>Lesión Muscular - Creu Blanca</small></figcaption>
-                            </figure>
-                            )} />                    
+                        <p className='green-creu-blanca uppercase'>Están colaborando en la elaboración y presentación de los casos clínicos</p>
 
-                        <Observer threshold={1} triggerOnce={true} render={() => (
-                            <figure className='align-right fade-in'>
-                            <img src='/static/02-lesio-muscular-creu-blanca.jpg'/>
-                            <figcaption><small>Lesión Muscular - Creu Blanca</small></figcaption>
-                            </figure>
-                            )} />
+                        {props.specialistsitems.sort((a,b) => {
+                            if (a.id < b.id) {
+                                return -1
+                            }
+                            if (a.id > b.id) {
+                                return 1
+                            }
+                            return 0
+                            }).map((specialistsitem, ID) => (
+                            <div>
+                                <p><strong className='bold'>{specialistsitem.type}</strong></p>
+                                <ul className='no-style'>
+                                    {specialistsitem.drs.map((dr, index) => (
+                                        <li className='dark-color' key={index}>
+                                            <span>{dr.name}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>))}
                     </div>
                 </section>
                 <section>
@@ -227,38 +219,6 @@ const CongressProgramm = (props) => (
                         .table-scroll table {
                         width:100%;
                         }
-                    }
-                    @media screen and (max-width: 768px) {
-                      .align-right img {
-                        margin:0 auto;
-                        display:block;
-                      }
-                      .align-right figcaption {
-                        text-align:center;
-                      }
-                    }
-                    @media screen and (min-width: 1024px) {
-                      .align-right {
-                        float:right;
-                        padding-left:1em;
-                      }
-                      .clear {
-                        clear:both;
-                      }
-                    }
-                    .fade-in {
-                      animation-name: fadeIn;
-                      animation-duration: 1.3s;
-                      animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
-                      animation-fill-mode: forwards;
-                    }
-                    @keyframes fadeIn {
-                      from {
-                        opacity: 0;
-                      }
-                      to {
-                        opacity: 1;
-                      }
                     }
                 `}</style>
             </div>
