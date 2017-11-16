@@ -99,15 +99,15 @@ const CongressProgramm = (props) => (
                         
                         <Observer threshold={1} triggerOnce={true} render={() => (
                             <figure className='align-right fade-in'>
+                            <figcaption className='align-center green-creu-blanca'><h2>Patrocinador principal</h2></figcaption>
                             <img src='/static/logo-toshiba-medical-congres-creu-blanca-lesions-musculars.jpg'/>
-                            <figcaption className='align-center green-creu-blanca'><h2>Patrocinio</h2></figcaption>
                             </figure>
                             )} />
                         
                         <Observer threshold={1} triggerOnce={true} render={() => (
                             <figure className='align-right fade-in'>
-                            <img src='/static/logo-setrade-congres-creu-blanca-lesions-musculars.jpg'/>
                             <figcaption className='align-center green-creu-blanca'><h2>Auspicio</h2></figcaption>
+                            <img src='/static/logo-setrade-congres-creu-blanca-lesions-musculars.jpg'/>
                             </figure>
                             )} /> 
                         
@@ -177,6 +177,9 @@ const CongressProgramm = (props) => (
                     -moz-hyphens: auto;
                     -webkit-hyphens: auto;
                     hyphens: auto;
+                    }
+                    figure {
+                        margin-bottom:1.5em;
                     }
                     @media screen and (min-width: 768px) {              
                     .congress-data {
