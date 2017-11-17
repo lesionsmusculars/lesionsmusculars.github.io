@@ -33,10 +33,15 @@ export default () => (
           
           <p>Para ello se cuenta con la participación de algunos de los principales especialistas en lesiones musculares de este país y los propios casos clínicos serán presentados por especialistas de renombre internacional y basados en deportistas de élite.</p>
 
+          <p>Programa científico organizado y coordinado por los <strong className='green-creu-blanca'>Drs. Carles Pedret y Xavier Alomar</strong>.</p>
+
           <br className='clear'/>
         <style jsx>{`
           .green-creu-blanca {
               color:#00ad69;
+          }
+          strong {
+              font-weight:700;
           }
           @media screen and (max-width: 768px) {
             .align-right img {
