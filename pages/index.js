@@ -42,6 +42,7 @@ const CongressProgramm = (props) => (
                     <h1><strong>Palau de Congressos de Catalunya</strong></h1>
                     <p className='green-creu-blanca'>FECHA DEL CONGRESO</p>
                     <h1><strong>23 de febrero de 2018</strong></h1>
+                    <h1><Link href='/inscripciones'><a target='_blank' className='btn btn-outline-success btn-lg'>INSCRÍBETE</a></Link></h1>
                 </Jumbotron>
             </div>
                 </section>
@@ -109,7 +110,14 @@ const CongressProgramm = (props) => (
                             <figcaption className='align-center green-creu-blanca'><h2>Auspicio</h2></figcaption>
                             <img src='/static/logo-setrade-congres-creu-blanca-lesions-musculars.jpg'/>
                             </figure>
-                            )} /> 
+                            )} />
+                            
+                            <Observer threshold={1} triggerOnce={true} render={() => (
+                                <figure className='align-right fade-in'>
+                                <figcaption className='align-center green-creu-blanca'><h2>Auspicio</h2></figcaption>
+                                <img src='/static/logo-aemef-congres-creu-blanca-lesions-musculars.jpg'/>
+                                </figure>
+                                )} /> 
                         
                         <Observer threshold={1} triggerOnce={true} render={() => (
                             <figure className='align-right fade-in'>
@@ -154,8 +162,15 @@ const CongressProgramm = (props) => (
                     strong.bold {
                         font-weight:700;
                     }
-                    .green-creu-blanca {
+                    .green-creu-blanca, .btn-outline-success {
                         color:#00ad69;
+                    }
+                    .btn-outline-success {
+                        border-color:#00ad69;
+                    }
+                    .btn-outline-success:hover {
+                        background-color:#00ad69;
+                        color:#ffffff;
                     }
                     .dark-color {
                         color:#1d1d1b;
