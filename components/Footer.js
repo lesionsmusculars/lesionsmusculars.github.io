@@ -12,7 +12,7 @@ const footerStyle = {
 
 const Footer = () => (
   <footer style={footerStyle}>
-        <p><Link href="@"><a target="_blank"><img src='/static/logo-facebook-familias-numerosas.png' /></a></Link> <Link href="#"><a target="_blank"><img src='/static/logo-twitter-familias-numerosas.png' /></a></Link></p>
+        <p><Link href="https://www.facebook.com/CENTROSMEDICOSCREUBLANCA/"><a target="_blank"><img src='/static/logo-facebook-congreso-creu-blanca.png' /></a></Link> <Link href="https://twitter.com/creublanca?lang=ca"><a target="_blank"><img src='/static/logo-twitter-congreso-creu-blanca.png' /></a></Link></p>
 
         <section>
           <p className='blue-congress'>Creu Blanca &#169; 2017
