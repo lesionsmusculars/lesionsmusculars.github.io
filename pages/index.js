@@ -112,12 +112,19 @@ const CongressProgramm = (props) => (
                             </figure>
                             )} />
                             
-                            <Observer threshold={1} triggerOnce={true} render={() => (
-                                <figure className='align-right fade-in'>
-                                <figcaption className='align-center green-creu-blanca'><h2>Auspicio</h2></figcaption>
-                                <img src='/static/logo-aemef-congres-creu-blanca-lesions-musculars.jpg'/>
-                                </figure>
-                                )} /> 
+                        <Observer threshold={1} triggerOnce={true} render={() => (
+                            <figure className='align-right fade-in'>
+                            <figcaption className='align-center green-creu-blanca'><h2>Auspicio</h2></figcaption>
+                            <img src='/static/logo-aemef-congres-creu-blanca-lesions-musculars.jpg'/>
+                            </figure>
+                            )} />
+                                
+                        <Observer threshold={1} triggerOnce={true} render={() => (
+                            <figure className='align-right fade-in'>
+                            <figcaption className='align-center green-creu-blanca'><h2>Auspicio</h2></figcaption>
+                            <img src='/static/logo-scme-congres-creu-blanca-lesions-musculars.jpg'/>
+                            </figure>
+                            )} />  
                         
                         <Observer threshold={1} triggerOnce={true} render={() => (
                             <figure className='align-right fade-in'>
