@@ -124,21 +124,14 @@ const CongressProgramm = (props) => (
                             <figcaption className='align-center green-creu-blanca'><h2>Auspicio</h2></figcaption>
                             <img src='/static/logo-scme-congres-creu-blanca-lesions-musculars.jpg'/>
                             </figure>
-                            )} />  
-                        
+                            )} /> 
+                            
                         <Observer threshold={1} triggerOnce={true} render={() => (
-                            <figure className='align-right fade-in'>
-                            <img src='/static/lesio-muscular-creu-blanca.jpg'/>
-                            <figcaption><small>Lesión Muscular - Creu Blanca</small></figcaption>
-                            </figure>
-                            )} />                    
-
-                        <Observer threshold={1} triggerOnce={true} render={() => (
-                            <figure className='align-right fade-in'>
-                            <img src='/static/02-lesio-muscular-creu-blanca.jpg'/>
-                            <figcaption><small>Lesión Muscular - Creu Blanca</small></figcaption>
-                            </figure>
-                            )} />
+                        <figure className='align-right fade-in'>
+                        <figcaption className='align-center green-creu-blanca'><h2>Auspicio</h2></figcaption>
+                        <img src='/static/logo-sccot-congres-creu-blanca-lesions-musculars.jpg'/>
+                        </figure>
+                        )} />
                     </div>
                 </section>
                 <section>
