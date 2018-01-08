@@ -101,7 +101,7 @@ const CongressProgramm = (props) => (
                         <Observer threshold={1} triggerOnce={true} render={() => (
                             <figure className='align-right fade-in'>
                                 <figcaption className='align-center green-creu-blanca'><h2>Patrocinador principal</h2></figcaption>
-                                <img src='/static/02-logo-toshiba-medical-congres-creu-blanca-lesions-musculars.jpg'/>
+                                <img src='/static/01-logo-canon-medical-congres-creu-blanca-lesions-musculars.jpg'/>
                             </figure>
                         )} />
                         
