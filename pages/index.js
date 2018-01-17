@@ -139,6 +139,13 @@ const CongressProgramm = (props) => (
                                 <img src='/static/logo-aemb-congres-creu-blanca-lesions-musculars.jpg'/>
                             </figure>
                         )} />
+                        
+                        <Observer threshold={1} triggerOnce={true} render={() => (
+                            <figure className='align-right fade-in'>
+                                <figcaption className='align-center green-creu-blanca'><h2>Colaboración</h2></figcaption>
+                                <img src='/static/logo-barca-congres-creu-blanca-lesions-musculars.jpg'/>
+                            </figure>
+                        )} />
                     </div>
                 </section>
                 <section>
